@@ -1,0 +1,35 @@
+
+<h2 style="color: blue"> List des Fournisseurs </h2> 
+
+
+
+    <table>
+        <tr>
+            <td> id </td>
+            <td> first name </td>
+            <td> last name  </td>
+            <td> email </td>
+            <td> adresse </td>
+        </tr>
+        <% @frs.each do |fr| %>
+            <tr>
+                <td> <a href="modifSupplier/<%= fr.id %>" > <%= fr.id %> </a> </td>
+                <td> <%= fr.first_name %> </td>
+                <td> <%= fr.last_name %> </td>
+                <td> <%= fr.email %></td>
+                <td> <%= fr.adresse %> </td>
+            </td>
+        <% end %>
+    </table>
+
+  
+
+  <br>
+  
+  <a href="/addSupplier">
+     <input  type="button" value="Add" >
+  </a>
+
+  <a  href="/home"> 
+  <input  type="button" value="Retours" >
+</a>

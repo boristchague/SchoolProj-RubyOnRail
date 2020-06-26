@@ -1,0 +1,36 @@
+<body style="padding-left: 600">
+<h2 style="color: blue">Liste des clients </h2>
+
+
+
+    <table>
+        <tr>
+            <td> id </td>
+            <td> first name </td>
+            <td> last name  </td>
+            <td> email </td>
+            <td> adresse </td>
+        </tr>
+        <% @clients.each do |client| %>
+          <tr>
+              <td>  <a href="modifCustomer/<%= client.id %>" > <%= client.id %> </a> </td> 
+              <td> <%= client.first_name %> </td>
+              <td> <%= client.last_name %> </td>
+              <td> <%= client.email %></td>
+              <td> <%= client.adresse %> </td>
+          </td>
+        <% end %>
+
+    </table>
+
+ 
+
+  <br>
+
+  <a  href="/addCustomer"> 
+    <input  type="button" value="Add" >
+  </a>
+  <a  href="/home"> 
+    <input  type="button" value="Retours" >
+  </a>
+</body>

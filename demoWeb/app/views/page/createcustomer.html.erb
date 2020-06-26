@@ -1,0 +1,19 @@
+
+
+
+<body style="text-align: center; padding-top: 100px">
+
+    <h2 style="color: Blue"> Création de Clients <h2>
+
+    <div >
+        <%= form_tag "/addCustomer", method: "post" do %>
+            <label> First Name<label><input type="text" name="First_Name" /> <br>
+            <label> Last Name<label><input type="text" name="Last_Name" /> <br>
+            <label> Email <label><input type="text" name="Email" /> <br>
+            <label> Address <label><input type="text" name="Address" /> <br>
+            <input type="submit" value="Ajouter"/>
+        <% end %>
+
+    </div>
+
+</body>

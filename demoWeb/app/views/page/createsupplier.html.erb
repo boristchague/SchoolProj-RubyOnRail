@@ -1,0 +1,16 @@
+
+<body style="text-align: center; padding-top: 100px">
+
+    <h2 style="color: Blue"> Création de Fournisseurs <h2>
+
+    <div >
+        <%= form_tag "/addSupplier", method: "post" do %>
+            <label> first name<label><input type="text" name="First_Name" /> <br>
+            <label> last name<label> <input type="text" name="Last_Name" /><br>
+            <label> email <label><input type="text" name="Email" /><br>
+            <label> address <label><input type="text" name="Address" /> <br>
+            <input type="submit" value="Ajouter"/>
+        <% end %>
+    </div>
+
+</body>
