@@ -13,3 +13,4 @@ Simple web app with CRUD functionnalities to manage Customers and Suppliers :)
 - move to the root of the projet using command :"cd"
 - launch server using command : "rails s"
 - Go to the web browser to address: "localhot:3000/home"
+-     ....
